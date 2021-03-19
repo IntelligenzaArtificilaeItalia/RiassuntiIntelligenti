@@ -81,7 +81,8 @@ def main():
 				raw_text = docx2txt.process(docx_file) # Parse in the uploadFile Class directory
 				raw_textok = raw_text
 		
-		st.success("File caricato con successo")
+		if(len(raw_textok)<=3):
+			st.success("File caricato e letto con successo")
 		if( st.checkbox("Leggi testo estratto dal documento sempre con una nostra intelligenza artificiale")):
 			st.write(raw_textok)
 		lenI = len(raw_textok)
