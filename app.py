@@ -6,6 +6,7 @@ from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lex_rank import LexRankSummarizer
 import pdfplumber
 import docx2txt
+nltk.download('punkt')
 
 def sumy_summarizer(docx):
 	parser = PlaintextParser.from_string(docx,Tokenizer("italian"))
