@@ -1,6 +1,6 @@
-pdfplumber==0.5.27
-gensim==3.8.3
-nltk==3.5
-docx2txt==0.8
-sumy==0.8.1
-streamlit==0.78.0
+pdfplumber
+gensim
+nltk
+docx2txt
+sumy
+streamlit
