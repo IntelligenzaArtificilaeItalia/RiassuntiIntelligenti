@@ -19,7 +19,7 @@ def sumy_summarizer(docx):
 
 
 def main():
-	st.title("INTELLIGENZA ARTIFICIALE ITALIA")
+	st.markdown("<h1 style='text-align: center; background-color: black;'><bold style='color:green;'>INTELLIGENZA<bold style='color:white;'>ARTIFICIALE<bold style='color:red;'>ITALIA</bold></bold></bold></h1>", unsafe_allow_html=True)
 	activity1 = ["Manuale","File (txt, pdf, Docx)"]
 	choice = st.sidebar.selectbox("Seleziona come inserire il testo da tradurre",activity1)
 	if choice == 'Manuale':
@@ -84,8 +84,8 @@ def main():
 		
 		if(len(raw_textok)>=3):
 			st.success("File caricato e letto con successo")
-		if( st.checkbox("Leggi testo estratto dal documento sempre con una nostra intelligenza artificiale")):
-			st.write(raw_textok)
+			if( st.checkbox("Leggi testo estratto dal documento sempre con una nostra intelligenza artificiale")):
+				st.write(raw_textok)
 		lenI = len(raw_textok)
 		lenf= 0
 		summary_choice = st.selectbox("Algoritmo NLP per il riassunto",["Genism","Sumy Lex Rank"])
@@ -110,8 +110,16 @@ def main():
 				st.success("Il testo iniziale era di " + str(lenI) + " lettere, il riassunto contiene solo " + str(lenf) +" lettere")
 				st.info("L'ottimizzazione è stata di " + str(lenI - lenf ) + " caratteri ")
 				st.error("Attenzione, questo programma in alcuni casi potrebbe comunque non evidenziare aspetti importanti del testo ")
-
-
+	
+	st.text("")
+	st.text("")
+	st.text("")
+	st.text("")
+	st.text("")
+	st.text("")
+	st.text("")
+	st.write("Proprietà intellettuale di [Intelligenza Artificiale Italia © ](https://intelligenzaartificialeitalia.net)")
+	st.write("Hai un idea e vuoi realizzare un Applicazione Web Intelligente? contatta il nostro [Team di sviluppatori © ](mailto:python.ai.solution@gmail.com)")
 
 if __name__ == '__main__':
 	main()
