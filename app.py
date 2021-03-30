@@ -19,7 +19,7 @@ def sumy_summarizer(docx):
 
 
 def main():
-	st.markdown("<h1 style='text-align: center; background-color: black;'><bold style='color:green;'>INTELLIGENZA<bold style='color:white;'>ARTIFICIALE<bold style='color:red;'>ITALIA</bold></bold></bold></h1>", unsafe_allow_html=True)
+	st.markdown("<h1 style='text-align: center; background-color: black;font-size:16px;'><bold style='color:green;'>INTELLIGENZA<bold style='color:white;'>ARTIFICIALE<bold style='color:red;'>ITALIA</bold></bold></bold></h1>", unsafe_allow_html=True)
 	activity1 = ["Manuale","File (txt, pdf, Docx)"]
 	choice = st.sidebar.selectbox("Seleziona come inserire il testo da tradurre",activity1)
 	if choice == 'Manuale':
