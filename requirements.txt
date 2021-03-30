@@ -1,5 +1,5 @@
 pdfplumber
-gensim
+gensim==3.8.1
 nltk
 docx2txt
 sumy
