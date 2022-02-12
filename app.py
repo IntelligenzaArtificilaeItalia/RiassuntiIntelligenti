@@ -16,7 +16,7 @@ def sumy_summarizer(docx):
 	result = ' '.join(summary_list)
 	return result
 
-st.set_page_config(page_title="Italian Intelligence Summarized Suite by I.A. Italia", page_icon="📚", layout='wide', initial_sidebar_state='auto')
+st.set_page_config(page_title="Riassunti Intelligenti", page_icon="📚", layout='wide', initial_sidebar_state='auto')
 
 st.markdown("<center><h1> Italian Intelligence Summarized Suite <small><br> Powered by INTELLIGENZAARTIFICIALEITALIA.NET </small></h1>", unsafe_allow_html=True)
 st.write('<p style="text-align: center;font-size:15px;" > <bold>Stanco di dover leggere pagine su pagine, fatti aiutare dalle nostre I.A. <bold>  </bold><p>', unsafe_allow_html=True)
@@ -30,13 +30,12 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
+st.subheader("Crea riassunti con la nostra intelligenza artificiale !")
 
 def main():
-	st.markdown("<h1 style='text-align: center; background-color: black;font-size:16px;'><bold style='color:green;'>INTELLIGENZA<bold style='color:white;'>ARTIFICIALE<bold style='color:red;'>ITALIA</bold></bold></bold></h1>", unsafe_allow_html=True)
 	activity1 = ["Manuale","File (txt, pdf, Docx)"]
-	choice = st.sidebar.selectbox("Seleziona come inserire il testo da tradurre",activity1)
+	choice = st.selectbox("Seleziona come inserire il testo da tradurre",activity1)
 	if choice == 'Manuale':
-		st.subheader("Crea riassunti con la nostra intelligenza artificiale !")
 		raw_text = st.text_area("Inserisci qui il testo da Riassumere","",height=200,max_chars=15000)
 		lenI = len(raw_text)
 		lenf= 0
