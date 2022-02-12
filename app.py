@@ -15,7 +15,20 @@ def sumy_summarizer(docx):
 	summary_list = [str(sentence) for sentence in summary]
 	result = ' '.join(summary_list)
 	return result
-	
+
+st.set_page_config(page_title="Italian Intelligence Summarized Suite by I.A. Italia", page_icon="📚", layout='wide', initial_sidebar_state='auto')
+
+st.markdown("<center><h1> Italian Intelligence Summarized Suite <small><br> Powered by INTELLIGENZAARTIFICIALEITALIA.NET </small></h1>", unsafe_allow_html=True)
+st.write('<p style="text-align: center;font-size:15px;" > <bold>Stanco di dover leggere pagine su pagine, fatti aiutare dalle nostre I.A. <bold>  </bold><p>', unsafe_allow_html=True)
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 def main():
